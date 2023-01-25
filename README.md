@@ -44,17 +44,17 @@ Your org will also need to have the Non Profit Service Pack (NPSP) installed. In
 sfdx force:package:create --name "Phone Number Formatting"--description "Apex classes and triggers to auto format Australian phone numbers for use with 3rd party tools." --packagetype Unlocked --path force-app --nonamespace  --orgdependent --targetdevhubusername <REPLACE_WITH_YOUR_USERNAME_OR_ORG_ALIAS>
 ```
 5. Create the Package Version.  Note that the last version number will be in the file sfdx-project.json in the root of your cloned repo:
-
-    sfdx force:package:version:create -p PhoneNumberFormatting@<REPLACE_WITH_LAST_VERSION_NUMBER> -d force-app --wait 10 -x -v <REPLACE_WITH_YOUR_USERNAME_OR_ORG_ALIAS>
-
+```
+sfdx force:package:version:create -p PhoneNumberFormatting@<REPLACE_WITH_LAST_VERSION_NUMBER> -d force-app --wait 10 -x -v <REPLACE_WITH_YOUR_USERNAME_OR_ORG_ALIAS>
+```
 6. Note the line in the output terminal that says:
-
-    Package Installation URL: https://login.salesforce.com/packaging/installPackage.apexp?p0=XXXXXXXXXXXXXXXXXX"
-
+```
+Package Installation URL: https://login.salesforce.com/packaging/installPackage.apexp?p0=XXXXXXXXXXXXXXXXXX"
+```
 7. Replace the URL at the top of the page with this URL. This is the install URL of the package you just created.
 
 8. Promote the Package Version. Without this command, you will not be able to install this package into actual production orgs.
-
-    sfdx force:package:version:promote -p PhoneNumberFormatting@<REPLACE_WITH_LAST_VERSION_NUMBER>  -v <REPLACE_WITH_YOUR_USERNAME_OR_ORG_ALIAS>
-
+```
+sfdx force:package:version:promote -p PhoneNumberFormatting@<REPLACE_WITH_LAST_VERSION_NUMBER>  -v <REPLACE_WITH_YOUR_USERNAME_OR_ORG_ALIAS>
+```
 9. If you made it this far, pat yourself on the back! Nice work!
