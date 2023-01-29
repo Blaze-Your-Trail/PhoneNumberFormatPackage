@@ -4,17 +4,16 @@
             "path": "force-app",
             "default": true,
             "package": "PhoneNumberFormatting",
-            "versionName": "ver 0.1",
-            "versionNumber": "0.1.0.NEXT"
+            "versionName": "ver 1.0",
+            "versionNumber": "1.0.0.NEXT"
         }
     ],
-    "name": "PhoneNumberFormatting",
+    "name": "Phone Number Formatting",
     "namespace": "",
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "55.0",
     "packageAliases": {
-        "PhoneNumberFormatting": "0HoDn000000Kz4SKAS",
-        "PhoneNumberFormatting@0.1.0-1": "04tDn0000002kzKIAQ",
-        "PhoneNumberFormatting@0.1.0-2": "04tDn0000002kzOIAQ"
+        "PhoneNumberFormatting": "0HoDn000000GmyzKAC",
+        "PhoneNumberFormatting@1.0.0-1": "04tDn000000yrGZIAY"
     }
 }
